@@ -1,56 +1,134 @@
+img{
+	display: block;
+}
+
+#header{
+	background-color:#65fff8;
+	height: 50vh;
+
+}
+
 .container{
-	width: 1300px;
+	width: 1180px;
 	margin: 0 auto;
-	background-color:blue;
-	color: white;
+	background-color:#65fff8;
+	color: black;
     line-height: 45px;
 }
 
-#nav {
-	float:right;
+.logo>h2{
+	margin: 0 ;
+	padding: 20px;
 }
 
-.clearfix {
-	clear: both;
-}
-
-#nav ul {
-	list-style-type: none;
-}
-
-#nav li {
+.logo{
 	float: left;
 }
-#nav a {
-	padding: 0 24px;			
-	color: #fff;				/* 字體顏色 */
-	text-decoration: none;		/* 超連結底線消除 */	
-	text-transform: capitalize; /*字母大寫*/
-}
-.clear{
-	clear: both;
-}
-.nav ul{
-	list-style-type: none;
-}
-
-.nav{
+.nav {
 	float: right;
-	text-decoration: none;
-	text-transform: capitalize;
 }
 
-#nol-12{
-	-webkit-box-sizing: border-box; 
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;			
-	width: 25%;		/*設定寬度*/
-	float: left;
+.nav a{
+	text-decoration: none;
 }
-.filter li:after{
+
+#header .container .nav>li{
+	list-style-type: none;
+	padding: 10px;
+	float:left;
+}
+.nav>li>a{
+	color:black;
+}
+
+
+.clearfix{
+	clear: both;
+}
+
+.word>h1{
+	color:white;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 10px;
+}
+
+.banner {
+	text-align: center;
+}
+
+.nav2 ul {
+	text-align: center;
+}
+
+.nav2 ul>li{
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+}
+.nav2 a{
+	text-decoration: none;
+}
+
+.col-12 > .col-4>img{
+	float:left;
+	padding-left: 20px;
+	padding-bottom: 30px;
 	
 }
 
+.container-pic{
+	width: 1180px;
+	margin: 0 auto;
+}
+.mark>img{
+	width: 25px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.mark>h5{
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+
+#footer{
+	background: #ffdd61;
+} 
+
+.container-footer{
+	width: 1180px;
+	margin: 0 auto;
+	background-color:#ffdd61;
+	color: black;
+    line-height: 45px;
+}
+
+#footer .container-footer .logo2 >h3{
+	margin-top: 0;
+	text-align: center;
+	padding-top: 60px;
+	font-size:40px ;
+}
+
+.nav3 ul {
+	text-align: center;
+}
+
+.nav3 ul>li{
+	display: inline;
+	text-transform: uppercase;
+	padding: 10px;
+}
+.nav3 a{
+	text-decoration: none;
+}
+
+.copyright{
+	text-align: center;
+	font-size: 5px;
+}
 
 
 
