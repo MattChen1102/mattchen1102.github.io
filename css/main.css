@@ -1,0 +1,57 @@
+.container{
+	width: 1300px;
+	margin: 0 auto;
+	background-color:blue;
+	color: white;
+    line-height: 45px;
+}
+
+#nav {
+	float:right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+#nav ul {
+	list-style-type: none;
+}
+
+#nav li {
+	float: left;
+}
+#nav a {
+	padding: 0 24px;			
+	color: #fff;				/* 字體顏色 */
+	text-decoration: none;		/* 超連結底線消除 */	
+	text-transform: capitalize; /*字母大寫*/
+}
+.clear{
+	clear: both;
+}
+.nav ul{
+	list-style-type: none;
+}
+
+.nav{
+	float: right;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+#nol-12{
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;			
+	width: 25%;		/*設定寬度*/
+	float: left;
+}
+.filter li:after{
+	
+}
+
+
+
+
+
