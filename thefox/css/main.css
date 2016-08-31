@@ -209,9 +209,9 @@ img {
 .filter li {
 	float:left;
 	color:white;
-	padding-right: 10em;
+	padding-right: 50px;
   list-style-type: none;
-  padding-left: 15em;
+  padding-left: 100px;
 }
 
 .filter li a {
