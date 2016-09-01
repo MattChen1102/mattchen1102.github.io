@@ -2,373 +2,229 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title> -->
 
-	<link rel="stylesheet" href="css/normalize.css">
+	<!-- link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/main.css">
+
+	<srcipt	src="js/jquery-3.1.0.min.js"></srcipt>
+	<srcipt	src="js/bootstrap.min.js"></srcipt>
+
 </head>
+
 <body>
-	
+
 	<div id="header">
-		<div class="container">
-			<div id="logo">
-				<a href="#">
-					<img src="http://placehold.it/125x40" alt="logo">
-				</a>
+		<div class="container clearfix"> <!-- 會自動在div結束尾巴加上clearfix -->
+			<div id="logo" class="pull-left">
+					<h4 class="glyphicon glyphicon-leaf"> The<strong>Fox</strong></h4>
 			</div>
-			<div id="nav">
-				<ul>
-					<li><a href="#">home</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">portfolio</a></li>
+			<nav class="pull-right">
+				<ul class="list-inline">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Page</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Travel</a></li>
+					<li><a href="#">Shortcodes</a></li>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#"></a><span class="glyphicon glyphicon-search"></span></li>
 				</ul>
-			</div>
-			
-			<div class="burger-logo" class="open">
-				<img src="images/menu.png" alt="burger-logo">
+			</nav>
+		</div>
+	</div>
+
+	<div id="banner">
+		<div class="container">
+			<div class="title">
+				<div class="title-banner">
+					<p>WOULD YOU LIKE TO BE</p>
+					<h1>CREATIVE</h1>
+					<p>WITH AMAZING THEFOX DESIGH</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="clearfix"></div>
+
+	<section class="features"> <!--寫一本書有章節要說明，可以用section，只要容器就用div -->
+		<div class="container"> <!-- 有置中效果 -->
+			<div class="row"> <!-- 在外層往外拉15px的margin，目的是解決未貼齊的Container的問題 -->
+				<div class="col-md-4">  <!-- mobile First 會去找小的，預設是div -->
+					<div class="title-group">
+						<h3 class="glyphicon glyphicon-briefcase"></h3>
+						<h3 class="title"> CRETIVE TEAM PROFILE</h3>	
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia nam temporibus distinctio delectus sunt voluptatibus facere a, laudantium eum!
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="title-group">
+						<h3 class="glyphicon glyphicon-th"></h3>
+						<h3 class="title">AMAZING PORTFOLIO</h3>	
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia nam temporibus distinctio delectus sunt voluptatibus facere a, laudantium eum!
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="title-group">
+						<h3 class="glyphicon glyphicon-edit"></h3>
+						<h3 class="title">GREAT BLOG DESIGN</h3>	
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia nam temporibus distinctio delectus sunt voluptatibus facere a, laudantium eum!
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="title-group">
+						<h3 class="glyphicon glyphicon-wrench"></h3>
+						<h3 class="title"> SUPPORT SERVICES</h3>	
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia nam temporibus distinctio delectus sunt voluptatibus facere a, laudantium eum!
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="title-group">
+						<h3 class="glyphicon glyphicon-comment"></h3>
+						<h3 class="title"> EASY TO CUSTOMIZE</h3>	
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia nam temporibus distinctio delectus sunt voluptatibus facere a, laudantium eum!
+					</p>
+				</div>
+				<div class="col-md-4">
+					<div class="title-group">
+						<h3 class="glyphicon glyphicon-screenshot"></h3>
+						<h3 class="title"> FULL SHORTCODES</h3>	
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, officia nam temporibus distinctio delectus sunt voluptatibus facere a, laudantium eum!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 	<div class="banner">
-		<div class="banner-container">
-			<div class="left">
-				&lt;
-			</div>
-			<div class="title">
-				<h3 class="subtitle">would you like to be</h3>
-				<img src="http://placehold.it/768x80" alt="creative">
-				<h3>with amazing thefox design</h3>
-			</div>
-			<div class="right">
-				&gt;
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-
-	<div class="features">
 		<div class="container">
-			
-			<div class="feature">
-				<div class="title">
-					<img src="http://placehold.it/45x45" alt="icon">
-					<h3>creative team profile</h3>
-					<div class="clearfix"></div>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, similique!
-				</p>
+			<div class="word">
+				<h1>Special <b>Portfolio</b> Dessign</h1>
+				<h2 class="glyphicon glyphicon-heart-empty"></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex soluta vitae voluptatibus facere voluptatum, quia illo tenetur unde provident. Fuga adipisci accusamus dolorum eius corporis sit, labore beatae recusandae, quaerat!</p>
 			</div>
-			<div class="feature">
-				<div class="title">
-					<img src="http://placehold.it/45x45" alt="icon">
-					<h3>creative team profile</h3>
-					<div class="clearfix"></div>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, similique!
-				</p>
-			</div>
-			<div class="feature">
-				<div class="title">
-					<img src="http://placehold.it/45x45" alt="icon">
-					<h3>creative team profile</h3>
-					<div class="clearfix"></div>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, similique!
-				</p>
-			</div>
-			<div class="feature">
-				<div class="title">
-					<img src="http://placehold.it/45x45" alt="icon">
-					<h3>creative team profile</h3>
-					<div class="clearfix"></div>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, similique!
-				</p>
-			</div>
-			<div class="feature">
-				<div class="title">
-					<img src="http://placehold.it/45x45" alt="icon">
-					<h3>creative team profile</h3>
-					<div class="clearfix"></div>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, similique!
-				</p>
-			</div>
-			<div class="feature">
-				<div class="title">
-					<img src="http://placehold.it/45x45" alt="icon">
-					<h3>creative team profile</h3>
-					<div class="clearfix"></div>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, similique!
-				</p>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>	
-
-	<div id="portfolio">
-		<div class="portfolio-container">
-			<h2>special <em>portfolio</em> design</h2>
-			<img src="http://placehold.it/38x32" alt="icon">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur ducimus ut, accusamus quasi, natus quos maiores sapiente cumque fugiat pariatur ipsum id eveniet minus enim.</p>
-			<ul class="filter">
-				<li><a href="#">all</a></li>
-				<li><a href="#">web design</a></li>
-				<li><a href="#">graphic design</a></li>
-				<li><a href="#">wordpress</a></li>
-				<li><a href="#">photography</a></li>
-			</ul>
-			<div class="clearfix"></div>
-		</div>
-	</div>	
- 	<div class="work">
-		<div class="row">
-			<div class="col-3">
-				<img src="http://placehold.it/480x300" alt="">
-			</div>
-			<div class="col-3">
-				<img src="http://placehold.it/480x300" alt="">
-			</div>
-
-			<div class="col-3">
-				<img src="http://placehold.it/480x300" alt="">
-			</div>
-			<div class="col-3">
-				<img src="http://placehold.it/480x300" alt="">
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-6">	
-				<div class="col-12">
-					<img src="http://placehold.it/960x300" alt="">
-				</div>
-				<div class="col-6">
-					<img src="http://placehold.it/480x300" alt="">
-				</div>
-				<div class="col-6">
-					<img src="http://placehold.it/480x300" alt="">
-				</div>
-			</div>
-
-		</div>
-
-			<div class="col-6">
-				<img src="http://placehold.it/960x600" alt="">
-			</div>
+			<nav class="pull-center">
+				<ul class="list-inline">
+					<li><a href="#">ALL</a></li>
+					<li><a href="#">WEB DESIGN</a></li>
+					<li><a href="#">GRAPHIC DESIGN</a></li>
+					<li><a href="#">WORDPRESS</a></li>
+					<li><a href="#">PHOTOGRAPHY</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
-	<div class="clearfix"></div>
+
+	<div id="pics">
+		<div class="row">
+			<div class="col-xs-3">
+				<img src="https://unsplash.it/g/480/300" alt="Pic1">
+			</div>
+			<div class="col-xs-3">
+				<img src="https://unsplash.it/480/300/?random" alt="Pic2">
+			</div>
+			<div class="col-xs-3">
+				<img src="https://unsplash.it/480/300/" alt="Pic3">
+			</div>
+			<div class="col-xs-3">
+				<img src="https://unsplash.it/480/300?image=0" alt="Pic4">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="col-xs-12">
+					<img src="https://unsplash.it/g/960/300" alt="Pic5">
+				</div>
+				<div class="col-xs-6">
+					<img src="https://unsplash.it/g/480/300" alt="Pic6">
+				</div>
+				<div class="col-xs-6">
+					<img src="https://unsplash.it/480/300/" alt="Pic7">
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="col-xs-12">
+					<img src="https://unsplash.it/g/960/600" alt="Pic8">
+				</div>
+			</div>	
+		</div>
+	</div>
 
 	<div class="loadmore">
-		<p>LOAD MORE</p>
+		<div class="container">
+			<a href="#">LOAD MORE</a>
+		</div>
 	</div>
-	<div class="now">
+
+	<div class="now clearfix">
 		<p>Do You Like <b>TheFox</b> Desing? Buy It Now Try Everything</p>
 		<div class="button">PURCHASE NOW</div>
 	</div>
-	<div class="clearfix"></div>
-		<div class="foxcontainer">
-			<div class="skill">
-				<ul>
-					<li>Our Skills</li>
-					<br>
-					<li>ADOBE PHOTOSHOP</li>
-					<br>
-					<li>WORDPRESS THEME</li>
-					<br>
-					<li>JAVASCRIPT</li>
-					<br>
-					<li>ADOBE ILLUSTRATOR</li>
-				</ul>
-			</div>
-			<div class="services">
+	
+	<div id="skills">
+		<div class="row">
+		<div class="skill clearfix">
+			<ul>
+				<li>Our Skills</li>
+				<li>ADOBE PHOTOSHOP</li>
+				<li>WORDPRESS THEME</li>
+				<li>JAVASCRIPT</li>
+				<li>ADOBE ILLUSTRATOR</li>
+			</ul>
+		</div>
+
+		<div class="services">
 				<div class="scontainer">
 					<p>Our Services</p>
-					<img src="http://placehold.it/170x170" alt="theFox">
+					<img src="https://unsplash.it/170/170/?random" alt="theFox">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, eligendi molestiae, asperiores perspiciatis libero dolores excepturi? Quasi, placeat deleniti magni?</p>
-					<h3>VIEW DETAIL</h3>
+					<a href="#">VIEW DETAIL</a>
 				</div>
-			</div>
 		</div>
-		<div class="clearfix"></div>
-	<div class="XXXXX">
-		<ul>
-			<li>79,000</li>
-			<li>754</li>
-			<li>4,000</li>
-			<li>1,000</li>
-		</ul>
+		</div>
 	</div>
-	<div class="clearfix"></div>
 
-	<div class="GGGGG">
-		<div class="text-container">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ad alias ullam nobis sed placeat obcaecati illo cum sequi maiores delectus laborum officiis, neque reiciendis libero repellat quae porro nesciunt explicabo voluptates, similique excepturi minus! Minima at, doloribus totam officia quidem earum facere vitae, quae illo fugiat consequatur, eligendi numquam.p>
-		</div>
-		<div class="pic-container">
+	<div class="red">
+		<div class="container">
 			<div class="row">
-				<div class="col-33">	
-					<img src="http://placehold.it/170x170" alt="Pic1">
-				</div>	
-				<div class="col-33">	
-					<img src="http://placehold.it/170x170" alt="Pic1">
-				</div>	
-				<div class="col-33">	
-					<img src="http://placehold.it/170x170" alt="Pic1">
-				</div>	
-			</div>
-		</div>
-	</div>
-	<div class="clearfix"></div>
-
-	<div class="manyli">
-		<div class="manyli-container">
-			<ul>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-			</ul>
-		</div>
-		<div class="manyli-container">
-			<ul>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-			</ul>
-		</div>
-		<div class="manyli-container">
-			<ul>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-			</ul>
-		</div>
-		<div class="manyli-container">
-			<ul>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-				<li>Lorem</li>
-			</ul>
-		</div>
-	</div>
-	<div class="5pics">
-			<div class="row">
-				<div class="col-2">
-					<img src="http://placehold.it/380x500" alt="">
+				<div class="col-xs-3">
+					<p>79,000</p>
+					<p>PURCHASES</p>
 				</div>
-				<div class="col-2">
-					<img src="http://placehold.it/380x500" alt="">
+				<div class="col-xs-3">
+					<p>754</p>
+					<p>FEATURES ADDED</p>
 				</div>
-
-				<div class="col-2">
-					<img src="http://placehold.it/380x500" alt="">
+				<div class="col-xs-3">
+					<p>4,000</p>
+					<p>TICKETS ANSWERED</p>
 				</div>
-				<div class="col-2">
-					<img src="http://placehold.it/380x500" alt="">
-				</div>
-				<div class="col-2">
-					<img src="http://placehold.it/380x500" alt="">
+				<div class="col-xs-3">
+					<p>1,000</p>
+					<p>YOUTUBE SUBSCRIBERS</p>
 				</div>
 			</div>
+		</div>
 	</div>
-	<div class="block1">
-		<p>UNLIMITED COLORS<br><br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, officiis</p>
-		<a href="#">PURCHASE NOW</a>
-	</div>
-	<div class="block2">
-		<p>EXTREMELY CUSTOMIZABLE<br><br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, officiis</p>
-		<a href="#">PURCHASE NOW</a>
-	</div>
-	<div class="block3">
-		<p>PARALLAX BACKGROUND SECTION<br><br>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, officiis</p>
-		<a href="#">PURCHASE NOW</a>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<div id="footer">
-		<ul class="social-media">
-			<li class="rss"><a href="#"><i class="icon-rss"></i></a></li>
-			<li class="twitter"><a href="#"><i class="icon-twitter"></i></a></li>
-			<li><a href="#"><i class="icon-facebook"></i></a></li>
-			<li><a href="#"><i class="icon-gplus"></i></a></li>
-			<li><a href="#"><i class="icon-pinterest"></i></a></li>
-			<li><a href="#"><i class="icon-dribbble"></i></a></li>
-		</ul>
-		
-	</div>
-
-
-
-
-
-
+	
 </body>
 </html>
+
+
+
+
+
+
+
